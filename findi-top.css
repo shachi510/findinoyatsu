@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+html {font-size: 62.5%;}
+body {line-height: 1.6;color: #222;font-size: 1.6rem;line-height: 2;-webkit-text-size-adjust: 100%;}
+body, div, pre, p, blockquote, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, th, td, button, figure, figcaption {margin: 0;padding: 0;}
+input, textarea {margin: 0;font-size: 100%;}
+
+sub {vertical-align: baseline;}
+* {-webkit-box-sizing: border-box;box-sizing: border-box;}
+/* ==========================================================
+ base Link
+========================================================== */
+a {color: #222;text-decoration: none;-webkit-transition: color 0.2s ease, color 0.2s ease;-o-transition: color 0.2s ease, color 0.2s ease;transition: color 0.2s ease, color 0.2s ease;}
+@media screen and (min-width: 768px) {
+  a:hover {color: #878787;  }}
+
+/* ==========================================================
+ clearfix
+========================================================== */
+.clearfix:before, .clearfix:after,
+.contents:before, .contents:after {content: "";
+  display: table;}
+
+.clearfix:after,
+.contents:after {
+clear: both;}
+
+/* For IE 6/7
+---------------------------------------------------------- */
+.clearfix,
+.contents {
+*zoom: 1;}
+
+/* ==========================================================
+ layout
+========================================================== */
+html {overflow-y: scroll;}
+
+body {text-align: center;}
+
+/* ==========================================================
+ wrapper
+========================================================== */
+.wrapper {width: 100%;
+  padding-bottom: 110px;
+  background-color: #fff;}
+
+
+/* ==========================================================
+ header
+========================================================== */
+.header {position: fixed;top: 0;left: 0;z-index: 10;width: 100%;background: #fff;-webkit-backface-visibility: hidden;backface-visibility: hidden;-webkit-transition: -webkit-transform 0.4s ease-in-out;transition: -webkit-transform 0.4s ease-in-out;-o-transition: transform 0.4s ease-in-out;transition: transform 0.4s ease-in-out;transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;}
+
+
+.header .header-in {
+position: relative;
+width: 1038px; height: 180px;margin: 0 aut;padding: 0 20px;line-height: 1;-webkit-backface-visibility: hidden;backface-visibility: hidden;-webkit-transform: rotate(0.0001deg);-ms-transform: rotate(0.0001deg);transform: rotate(0.0001deg);-webkit-transition: height 0.4s ease-in-out;-o-transition: height 0.4s ease-in-out;transition: height 0.4s ease-in-out;}
+@media screen and (max-width: 767px) {
+  .header .header-in {width: auto;height: 80px;padding: 0;
+  }}
+
+.header .header-logo {position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);}
+
+@media screen and (max-width: 767px) {
+  .header .header-logo {left: 24px;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}}
+
+.header .header-logo img {height: 40px;-webkit-backface-visibility: hidden;backface-visibility: hidden;-webkit-transform: rotate(0.0001deg);-ms-transform: rotate(0.0001deg);transform: rotate(0.0001deg);-webkit-transition: height 0.4s ease-in-out;-o-transition: height 0.4s ease-in-out;transition: height 0.4s ease-in-out;}
+
+@supports (-ms-ime-align: auto) {
+  .header .header-logo img {-webkit-backface-visibility: hidden;backface-visibility: hidden;-webkit-transition: width 0.4s ease-in-out;-o-transition: width 0.4s ease-in-out;transition: width 0.4s ease-in-out;
+  }}
+
+.header .header-btn-menu {position: absolute;top: 50%;right: 10px;float: right;display: block;width: 48px;height: 48px;margin-top: -24px;cursor: pointer;}
+
+@media screen and (max-width: 767px) {
+  .header .header-btn-menu {
+    right: 25px;
+  }}
+
+.header .header-btn-menu span {display: block;position: absolute;left: 4px;width: 40px;height: 2px;background: #000;opacity: 1;-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .2s ease-in-out;-o-transition: .2s ease-in-out;transition: .2s ease-in-out;}
+
+.header .header-btn-menu span:nth-child(1) {
+top: 18px;}
+
+.header .header-btn-menu span:nth-child(2), .header .header-btn-menu span:nth-child(3) {  top: 23px;}
+
+.header .header-btn-menu span:nth-child(4) {  top: 28px;}
+
+
+/* ==========================================================
+ nav-global
+========================================================== */
+.nav-global {display: none;position: fixed;top: 180px;left: 0;width: 100%;z-index: 10;background-color: #fff;text-align: left;line-height: 1.5;-webkit-backface-visibility: hidden;backface-visibility: hidden;}
+
+
+
+
+/* ==========================================================
+ contents
+========================================================== */
+.contents {  padding-top: 260px;  text-align: justify;}
+
+
+.contents-main {  width: 1038px;  margin: 0 auto;  padding: 0 20px;}
+
+
+/* ==========================================================
+ box card
+========================================================== */
+/* box-post-card-01
+---------------------------------------------------------- */
+.box-post-card-01 {  position: relative;  display: block;  height: 380px;}
+
+
+
+.box-post-card-01 .box-image img {  max-width: 100%;  -webkit-backface-visibility: hidden;  backface-visibility: hidden;}
+
+.box-post-card-01 .box-detail {  min-height: 141px;  margin-top: 22px;  -webkit-transform: rotate(0.05deg);  -ms-transform: rotate(0.05deg);  transform: rotate(0.05deg);}
+
+.box-post-card-01 .box-tag {position: absolute;top: 0;right: 0;z-index: 1;width: 22px;}
+
+/* ==========================================================
+ box
+========================================================== */
+/* box-cmn-grey
+---------------------------------------------------------- */
+.box-cmn-grey {background: #F8F8F8;}
+
+/* box-shigoto-bar-01
+---------------------------------------------------------- */
+.box-shigoto-bar-01 {position: relative;height: 380px;padding: 28px 25px 25px;border: 1px solid #D8D8D8;font-size: 1.2rem;line-height: 1.5;}
+
+
+/* mod-recommend-list
+---------------------------------------------------------- */
+.mod-recommend-list .mod-recommend-in {overflow: hidden;margin-left: -70px;}
+
+.mod-recommend-list .mod-recommend-in:first-child {margin-top: -70px;}
+
+.mod-recommend-list .item-recommend {position: relative;float: left;width: 286px;margin: 70px 0 0 70px;}}
